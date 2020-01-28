@@ -3,6 +3,11 @@
 public class Dude : MonoBehaviour
 {
 
+    //Weaponry
+    public GameObject melon;
+    public Vector2 groundDispenseVelocity;
+    public Vector2 verticalDispenseVelocity;
+
     //References
     public Transform trnsGun;
     public Transform trnsGunTip;
@@ -30,6 +35,7 @@ public class Dude : MonoBehaviour
         RotateGun();
         Animate();
         FlipSprites();
+        Shoot();
     }
 
     void Movement()
@@ -53,6 +59,16 @@ public class Dude : MonoBehaviour
 
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         trnsGun.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+    }
+
+    void Shoot(){
+
+        if(Input.GetMouseButtonDown(0)){
+            GameObject insantiatedMelon = Instantiate(melon, trnsGunTip.position, Quaternion.identity);
+            insantiatedMelon.GetComponent<FakeHeightObject>().Initialize(trnsGun.right * Random.Range(groundDispenseVelocity.x, groundDispenseVelocity.y), Random.Range(verticalDispenseVelocity.x, verticalDispenseVelocity.y));
+           
+        }
+
     }
 
     void Animate()

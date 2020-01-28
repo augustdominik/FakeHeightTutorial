@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -285,6 +286,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836691542477165238, guid: 5bd66c1c3f6a1e3459d35b15b71d8fe7,
+        type: 3}
+      propertyPath: melon
+      value: 
+      objectReference: {fileID: 9017228877642041804, guid: 17112e2f9a382a3418c2e405f5b8cf2f,
+        type: 3}
+    - target: {fileID: 1836691542477165238, guid: 5bd66c1c3f6a1e3459d35b15b71d8fe7,
+        type: 3}
+      propertyPath: groundDispenseVelocity.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836691542477165238, guid: 5bd66c1c3f6a1e3459d35b15b71d8fe7,
+        type: 3}
+      propertyPath: groundDispenseVelocity.y
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836691542477165238, guid: 5bd66c1c3f6a1e3459d35b15b71d8fe7,
+        type: 3}
+      propertyPath: verticalDispenseVelocity.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836691542477165238, guid: 5bd66c1c3f6a1e3459d35b15b71d8fe7,
+        type: 3}
+      propertyPath: verticalDispenseVelocity.y
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1836691544104750223, guid: 5bd66c1c3f6a1e3459d35b15b71d8fe7,
         type: 3}
