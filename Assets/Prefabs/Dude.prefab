@@ -45,9 +45,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70eaf39c12a8804ca679816ab54411d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 60
+  melon: {fileID: 9017228877642041804, guid: ec31e691a9a897d42b259488fe36944a, type: 3}
+  groundDispenseVelocity: {x: 0, y: 0}
+  verticalDispenseVelocity: {x: 0, y: 0}
   trnsGun: {fileID: 1836691544313270332}
   trnsGunTip: {fileID: 1836691544391789830}
+  sprRndDude: {fileID: 1836691542511337333}
+  sprRndGun: {fileID: 1836691544313270333}
+  movementSpeed: 60
+  fps: 22
   spritesRunAnim:
   - {fileID: -3436088759262847712, guid: f7cd2eee6c42fa74eae06cd6bd422323, type: 3}
   - {fileID: -7967789943925352885, guid: f7cd2eee6c42fa74eae06cd6bd422323, type: 3}
@@ -61,9 +67,6 @@ MonoBehaviour:
   - {fileID: 7304457260303791931, guid: f7cd2eee6c42fa74eae06cd6bd422323, type: 3}
   spriteIdle: {fileID: -5237587496765547653, guid: f7cd2eee6c42fa74eae06cd6bd422323,
     type: 3}
-  fps: 22
-  sprRndDude: {fileID: 1836691542511337333}
-  sprRndGun: {fileID: 1836691544313270333}
 --- !u!1 &1836691543173288944
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,6 +113,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -191,6 +195,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -272,6 +277,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
